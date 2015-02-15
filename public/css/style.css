@@ -1,0 +1,115 @@
+body {
+  background: url(/img/grey_pattern.png) repeat;
+}
+
+nav {
+  background: url(/img/wood_pattern.png) repeat;
+  height: 100px;
+}
+
+a {
+  color: #747474;
+}
+
+p {
+  line-height: 2rem;
+}
+
+nav ul li {
+  text-align: right;
+  position: relative;
+  z-index: 200;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  padding-top: 20px;
+  text-shadow: -4px -4px 29px rgba(255, 255, 255, 1);
+}
+
+nav ul li a {
+  width: 140px;
+}
+
+.main a:hover,
+#footer-container a:hover {
+  text-decoration: underline;
+}
+
+nav ul li span {
+  padding: 10px 10px 0 0;
+}
+
+nav .brand-logo {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+nav ul li.on,
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+nav ul li.on a,
+nav ul li:hover a {
+  color: #000;
+  border-bottom: 1px dashed #ccc;
+  text-decoration: none;
+}
+
+nav ul li.on {
+  border-bottom: 4px solid #00b0ff;
+}
+
+.main {
+  margin-top: -20px;
+  position: relative;
+  z-index: 100;
+  padding: 40px 30px;
+}
+
+
+.button-collapse {
+  color: #000;
+  margin-top: 10px;
+}
+
+#footer-container {
+  margin: -40px 0 0 0;
+  position: relative;
+  z-index: 10;
+}
+
+footer.page-footer {
+  border-top: 1px dotted rgba(117, 117, 117, 0.2);
+  padding: 40px 0 10px;
+  z-index: 1000;
+  position: relative;
+}
+
+#made-in-mexico {
+  background: url(/img/hechoenmexico.png) no-repeat;
+  background-size: 50px 49px;
+  height: 60px;
+  padding: 10px 10px 10px 70px;
+  color: #666;
+}
+
+
+@media only screen and (max-width: 992px) {
+  #nav-desktop {
+    display: none;
+    padding;
+  }
+
+  nav .brand-logo {
+    padding-top: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9rem;
+    text-align: right;
+  }
+}
