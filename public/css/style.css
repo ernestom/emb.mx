@@ -74,6 +74,7 @@ nav ul li.on {
   position: relative;
   z-index: 100;
   padding: 40px 30px;
+  border: 1px dotted rgba(117, 117, 117, 0.2);
 }
 
 .picture {
@@ -106,6 +107,9 @@ footer.page-footer {
   color: #666;
 }
 
+.hidden {
+  display: none;
+}
 
 @media only screen and (max-width: 992px) {
   #nav-desktop {

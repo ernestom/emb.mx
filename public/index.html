@@ -15,12 +15,12 @@
           <span>E</span>rnesto <span>M</span>endoza <span>B</span>lanco
           </a>
           <ul id="nav-desktop" class="right">
-            <li class="on"><a href="#!/intro"><span class="mdi-image-wb-cloudy"></span>intro</a></li>
+            <li><a href="#!/intro"><span class="mdi-image-wb-cloudy"></span>intro</a></li>
             <li><a href="#!/resume"><span class="mdi-editor-insert-drive-file"></span>résumé</a></li>
             <li><a href="#!/contact"><span class="mdi-communication-forum"></span>contact</a></li>
           </ul>
           <ul id="nav-mobile" class="side-nav">
-            <li class="on"><a href="#!/intro"><span class="mdi-image-wb-cloudy"></span>intro</a></li>
+            <li><a href="#!/intro"><span class="mdi-image-wb-cloudy"></span>intro</a></li>
             <li><a href="#!/resume"><span class="mdi-editor-insert-drive-file"></span>résumé</a></li>
             <li><a href="#!/contact"><span class="mdi-communication-forum"></span>contact</a></li>
           </ul>
@@ -28,7 +28,8 @@
         </div>
       </div>
     </nav>
-    <div class="main container white z-depth-2">
+    
+    <div id="intro" class="main container white z-depth-2 hidden">
       <div class="row">
         <div class="col l10 s12">
           <h4 class="header">
@@ -56,17 +57,29 @@
         </div>
       </div>
     </div>
+
+    <div id="resume" class="main container white z-depth-2 hidden">
+      
+      RÉSUMÉ
+
+    </div>
+
+    <div id="contact" class="main container white z-depth-2 hidden">
+
+      CONTACT 
+
+    </div>
+
     <div id="footer-container">
       <footer class="page-footer light-blue lighten-5">
         <div class="container">
           <p id="made-in-mexico">
-            Made with love somewhere in México. <a href="https://github.com/ernestom/emb.mx">Source.</a>
+            Made with love somewhere in México. <a class="right" href="https://github.com/ernestom/emb.mx"><small>Source code.</small></a>
           </p>
         </div>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/js/materialize.js"></script>
-    <script src="/js/init.js"></script>
+    <script src="/js/bundle.js"></script>
   </body>
 </html>
