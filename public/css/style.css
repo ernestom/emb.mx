@@ -11,6 +11,15 @@ a {
   color: #747474;
 }
 
+ul.table-of-contents a.active,
+ul.table-of-contents a.active:hover {
+  border-left: 2px dotted #ACEA72 !important;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+}
+ul.table-of-contents a:hover {
+  border-left: 1px dotted #ACEA72 !important;
+}
+
 p {
   line-height: 2rem;
 }
@@ -109,6 +118,14 @@ footer.page-footer {
 
 .hidden {
   display: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+.parallax-container {
+  height: 200px;
 }
 
 @media only screen and (max-width: 992px) {

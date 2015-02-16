@@ -38,4 +38,10 @@ $(function() {
     });
     app.run('#!/intro')
 
+    // Plugin initialization
+    $('.main .table-of-contents').pushpin({
+    	top: $('nav').height() ? $('.main .table-of-contents').offset().top : 0
+    });
+    $('.scrollspy').scrollSpy();
+
 });
