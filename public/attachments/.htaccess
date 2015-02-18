@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Attachments"
+AuthUserFile "/home/ernesto/resume_passwd"
+require valid-user
