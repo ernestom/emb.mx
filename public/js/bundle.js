@@ -30,6 +30,7 @@ $(function() {
             var currentPath = '/#' + li.children('a')[0].href.split('#')[1];
             li[(currentPath == context.path ? 'add' : 'remove') + 'Class']('on');
         });
+        ga('send', 'pageview', {'page': pageId.replace('#', '/')});
     };
     var app = $.sammy('.main', function() {
         this.get('#!/intro', transitionToPath);
