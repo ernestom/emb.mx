@@ -128,6 +128,16 @@ dt {
   height: 200px;
 }
 
+@media only screen and (min-device-width: 320px)
+                   and (max-device-width: 640px)
+                   and (orientation: portrait) {
+    .header span {
+        /*width:100%;
+        margin: 0 auto 30px;*/
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 992px) {
   #nav-desktop {
     display: none;
